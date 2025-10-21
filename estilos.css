@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    animation: mover 8s linear infinite;
+    position: relative;
+}
+
+@keyframes mover {
+    0% { left: -100vw; }
+    100% { left: 100vw; }
+}
+
+/* Contenedor del catálogo */
+#catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tarjetas de producto */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    color: #444;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.precio {
+    font-size: 1.3em;
+    color: #009688;
+    font-weight: bold;
+}
+
+.boton {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #00796b;
+}
